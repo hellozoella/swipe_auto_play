@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>Swipe Gallery</title>
+<link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+<link href="swipestyle.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="swipe.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+</head>
+<body class="website about">
+
+   <div class='content'>
+   
+     <div class='tab-content'>
+       <div class='timeline' id='timeline'>   <!-----------Timeline---------->
+        <div class='entries'>    <!-----------Border---------->
+        
+         <div class='when past'>      <!-------PAST-------->
+          
+           <a href="/exhibitions/marina-abramovic-white-space"> <!----first---->
+            <div class='entry'>
+            <center>
+       <div class="slideshow-block" id="slideshow-block_1">  <!----relative! --->
+       <ul class="slides" id="slides_1">
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2015/01/Dig-8.165x250cm.mmoc_.2014.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2015/01/The-Case-of-the-Dog-in-the-Nightime.201x301cm.mmoc_.2014.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2015/01/Poshy-on-the-Outside.200x300cm.mmoc_.2014-copy-2.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2015/01/q4-Pairs-of-Jaguar-Shoes.199.8x301-cm.mmoc_.2014.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2015/01/The-Case-of-the-Dog-in-the-Nightime.201x301cm.mmoc_.2014.jpg"/></li>
+	   </ul>
+       </div>
+            </center>
+            <div class='entry-info'>
+              <h4>ALEJANDRO OSPINA</h4>
+              <h5>Paint Artist</h5>
+              <h5 class='tight'>27 Bell Street London</h5>
+            </div>
+            </div>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+jQuery(function($){
+	// Cycle plugin
+	$('#slides_1').cycle({
+	    fx:     'none',
+	    speed:   1000,
+	    timeout: 10
+	}).cycle("pause");
+	
+	// Pause & play on hover
+	$('#slideshow-block_1').hover(function(){
+		$(this).find('#slides_1').addClass('active').cycle('resume');
+	}, function(){
+		$(this).find('#slides_1').removeClass('active').cycle('pause');
+	});
+	
+});
+
+</script>
+           </a>    <!----end first---->
+           
+           <a href="/exhibitions/nathalie-djurberg-hans-berg-the-gates-of-the-festival">  <!----second---->
+            <div class='entry'>
+             <center>
+       <div class="slideshow-block" id="slideshow-block_2">  <!----relative! --->
+       <ul class="slides" id="slides_2">
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2014/12/selected-2.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2014/12/vuelo03.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2014/12/selected-3.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2014/12/selected-4.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2014/12/selected-5.jpg"/></li>
+	   </ul>
+       </div>
+             </center>
+             <div class='entry-info'>
+              <h4>RAFAEL VILLARES</h4>
+              <h5>Paint Artist</h5>
+              <h5 class='tight'>52 Bell Street London</h5>
+             </div>
+            </div>
+            <script>
+jQuery(function($){
+	// Cycle plugin
+	$('#slides_2').cycle({
+	    fx:     'none',
+	    speed:   1000,
+	    timeout: 10
+	}).cycle("pause");
+	
+	// Pause & play on hover
+	$('#slideshow-block_2').hover(function(){
+		$(this).find('#slides_2').addClass('active').cycle('resume');
+	}, function(){
+		$(this).find('#slides_2').removeClass('active').cycle('pause');
+	});
+	
+});
+
+            </script>
+           </a>    <!----end second---->
+           
+           <a href="/exhibitions/gerard-byrne--3">
+            <div class='entry'>    <!----third---->
+             <center>
+       <div class="slideshow-block" id="slideshow-block_3">  <!----relative! --->
+       <ul class="slides" id="slides_3">
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2010/09/004.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2010/09/01.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2010/09/002.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2010/09/005.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2014/12/selected-11.jpg"/></li>
+	   </ul>
+       </div>
+             </center>
+             <div class='entry-info'>
+               <h4>CRISTINA RESTREPO</h4>
+               <h5>Paint Artist</h5>
+               <h5 class='tight'>Paint Artist</h5>
+             </div>
+             </div>
+            <script>
+jQuery(function($){
+	// Cycle plugin
+	$('#slides_3').cycle({
+	    fx:     'none',
+	    speed:   1000,
+	    timeout: 10
+	}).cycle("pause");
+	
+	// Pause & play on hover
+	$('#slideshow-block_3').hover(function(){
+		$(this).find('#slides_3').addClass('active').cycle('resume');
+	}, function(){
+		$(this).find('#slides_3').removeClass('active').cycle('pause');
+	});
+	
+});
+            </script>
+           </a>     <!----end third---->
+           
+           <a href="/exhibitions/genius-loci-spirit-of-place">
+            <div class='entry'>    <!----fourth---->
+             <center>
+       <div class="slideshow-block" id="slideshow-block_4">  <!----relative! --->
+       <ul class="slides" id="slides_4">
+		<li><img src="http://ministryofnomads.com/wp-content/gallery/nachev-revelata/img_4881.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/gallery/nachev-revelata/img_4912.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/gallery/nachev-revelata/img_5384.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/gallery/nachev-revelata/img_5818.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/gallery/nachev-revelata/img_5593.jpg"/></li>
+	   </ul>
+       </div>
+             </center>
+             <div class='entry-info'>
+               <h4>NACHEV</h4>
+               <h5>Paint Artist</h5>
+               <h5 class='tight'>Palazzo Cavalli Franchetti Venice</h5>
+             </div>
+             </div>
+          <script>
+jQuery(function($){
+	// Cycle plugin
+	$('#slides_4').cycle({
+	    fx:     'none',
+	    speed:   1000,
+	    timeout: 10
+	}).cycle("pause");
+	
+	// Pause & play on hover
+	$('#slideshow-block_4').hover(function(){
+		$(this).find('#slides_4').addClass('active').cycle('resume');
+	}, function(){
+		$(this).find('#slides_4').removeClass('active').cycle('pause');
+	});
+	
+});
+            </script>
+           </a>     <!----end fourth---->
+           
+           <a href="/exhibitions/ku">    <!----fifth---->
+             <div class='entry'>
+             <center>
+       <div class="slideshow-block" id="slideshow-block_5">  <!----relative! --->
+       <ul class="slides" id="slides_5">
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2014/04/selected6.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2014/04/MG_9631-selected.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2014/04/selected.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2014/04/MG_9627-selected.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2014/04/somosselect.jpg"/></li>
+	   </ul>
+       </div>
+             </center>
+             <div class='entry-info'>
+               <h4>GOMEZ BARROS</h4>
+               <h5>Paint Artist</h5>
+               <h5 class='tight'>Via Zenale, 3 Milan</h5>
+             </div>
+             </div>
+          <script>
+jQuery(function($){
+	// Cycle plugin
+	$('#slides_5').cycle({
+	    fx:     'none',
+	    speed:   1000,
+	    timeout: 10
+	}).cycle("pause");
+	
+	// Pause & play on hover
+	$('#slideshow-block_5').hover(function(){
+		$(this).find('#slides_5').addClass('active').cycle('resume');
+	}, function(){
+		$(this).find('#slides_5').removeClass('active').cycle('pause');
+	});
+	
+});
+            </script>
+           </a>     <!----end fifth---->
+           
+           <a href="/exhibitions/nobody-spoke">    <!----sixth---->
+             <div class='entry'>
+             <center>
+       <div class="slideshow-block" id="slideshow-block_6">  <!----relative! --->
+       <ul class="slides" id="slides_6">
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/12/selected.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/12/torreselected.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/12/lanaranjaselected.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/12/la26-selected.jpg"/></li>
+	   </ul>
+       </div>
+             </center>
+             <div class='entry-info'>
+               <h4>IVAN RICKENMANN</h4>
+               <h5>Paint Artist</h5>
+               <h5 class='tight'>52-54 Bell StreetLondon</h5>
+             </div>
+            </div>
+          <script>
+jQuery(function($){
+	// Cycle plugin
+	$('#slides_6').cycle({
+	    fx:     'none',
+	    speed:   1000,
+	    timeout: 10
+	}).cycle("pause");
+	
+	// Pause & play on hover
+	$('#slideshow-block_6').hover(function(){
+		$(this).find('#slides_6').addClass('active').cycle('resume');
+	}, function(){
+		$(this).find('#slides_6').removeClass('active').cycle('pause');
+	});
+	
+});
+            </script>
+            </a>    <!----end sixth---->
+           
+           <a href="/exhibitions/jonathan-monk-i-heart-1984">    <!----seventh---->
+             <div class='entry'>
+             <center>
+       <div class="slideshow-block" id="slideshow-block_7">  <!----relative! --->
+       <ul class="slides" id="slides_7">
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/12/MT1-selected.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/12/MT19-selected.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/12/MT8-selected.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/12/MT3-selected.jpg"/></li>
+	   </ul>
+       </div>
+             </center>
+             <div class='entry-info'>
+               <h4>MATILDA TEMPERLEY</h4>
+               <h5>Paint Artist</h5>
+               <h5 class='tight'>29 Bell Street London</h5>
+             </div>
+             </div>
+          <script>
+jQuery(function($){
+	// Cycle plugin
+	$('#slides_7').cycle({
+	    fx:     'none',
+	    speed:   1000,
+	    timeout: 10
+	}).cycle("pause");
+	
+	// Pause & play on hover
+	$('#slideshow-block_7').hover(function(){
+		$(this).find('#slides_7').addClass('active').cycle('resume');
+	}, function(){
+		$(this).find('#slides_7').removeClass('active').cycle('pause');
+	});
+	
+});
+            </script>
+             
+            </a>    <!----end seventh---->
+            
+            <a href="/exhibitions/tony-oursler--5">   <!----eighth---->
+              <div class='entry'>
+                <center>
+       <div class="slideshow-block" id="slideshow-block_8">  <!----relative! --->
+       <ul class="slides" id="slides_8">
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/06/1_2.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/06/4_1.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/06/6-2.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/06/8-2.jpg"/></li>
+	   </ul>
+       </div>
+                </center>
+                <div class='entry-info'>
+                  <h4>OLIVER BARNETT</h4>
+                  <h5>Paint Artist</h5>
+                  <h5 class='tight'>29 Bell StreetLondon</h5>
+                </div>
+                </div>
+          <script>
+jQuery(function($){
+	// Cycle plugin
+	$('#slides_8').cycle({
+	    fx:     'none',
+	    speed:   1000,
+	    timeout: 10
+	}).cycle("pause");
+	
+	// Pause & play on hover
+	$('#slideshow-block_8').hover(function(){
+		$(this).find('#slides_8').addClass('active').cycle('resume');
+	}, function(){
+		$(this).find('#slides_8').removeClass('active').cycle('pause');
+	});
+	
+});
+            </script>
+                
+            </a>    <!----end eighth---->
+            
+            <a href="/exhibitions/cross-section-of-a-revolution">   <!----ninth---->
+              <div class='entry'>
+                <center>
+       <div class="slideshow-block" id="slideshow-block_9">  <!----relative! --->
+       <ul class="slides" id="slides_9">
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/05/select_01.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/05/select_02.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/05/select_03.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/05/select_04.jpg"/></li>
+	   </ul>
+       </div>
+                </center>
+                <div class='entry-info'>
+                  <h4>HENRY BRUCE</h4>
+                  <h5>Paint Artist</h5>
+                  <h5 class='tight'>52 - 54 Bell Street London</h5>
+                </div>
+                </div>
+          <script>
+jQuery(function($){
+	// Cycle plugin
+	$('#slides_9').cycle({
+	    fx:     'none',
+	    speed:   1000,
+	    timeout: 10
+	}).cycle("pause");
+	
+	// Pause & play on hover
+	$('#slideshow-block_9').hover(function(){
+		$(this).find('#slides_9').addClass('active').cycle('resume');
+	}, function(){
+		$(this).find('#slides_9').removeClass('active').cycle('pause');
+	});
+	
+});
+            </script>
+            </a>     <!----end ninth---->
+            
+            <a href="/exhibitions/salt-sugar-sex">    <!----tenth---->
+              <div class='entry'>
+                <center>
+       <div class="slideshow-block" id="slideshow-block_10">  <!----relative! --->
+       <ul class="slides" id="slides_10">
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/04/PhilipVolkers1_selected.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/04/PhilipVolkers3_selected.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/04/selected33.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/04/selected2.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/04/selected21.jpg"/></li>
+	   </ul>
+       </div>
+                </center>
+                <div class='entry-info'>
+                  <h4>PHILIP VOLKERS</h4>
+                  <h5>Paint Artist</h5>
+                  <h5 class='tight'>Via Zenale, 3 Milan</h5>
+                </div>
+                </div>
+          <script>
+jQuery(function($){
+	// Cycle plugin
+	$('#slides_10').cycle({
+	    fx:     'none',
+	    speed:   1000,
+	    timeout: 10
+	}).cycle("pause");
+	
+	// Pause & play on hover
+	$('#slideshow-block_10').hover(function(){
+		$(this).find('#slides_10').addClass('active').cycle('resume');
+	}, function(){
+		$(this).find('#slides_10').removeClass('active').cycle('pause');
+	});
+	
+});
+            </script>
+                
+            </a>     <!----end tenth---->
+</div>      <!--------END PAST------------->
+
+
+            <div class='when upcoming'>     <!-----------UPCOMING---------->
+              
+              <a href="/exhibitions/lee-ufan--3">     <!----first---->
+                <div class='entry'>
+                <center>
+       <div class="slideshow-block" id="slideshow-block_11">  <!----relative! --->
+       <ul class="slides" id="slides_11">
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/03/Screen-shot-2013-02-20-at-16.54.54.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/03/Screen-shot-2013-02-20-at-16.59.02.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/03/Screen-shot-2013-02-20-at-16.53.261.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2013/03/Screen-shot-2013-02-20-at-16.54.42.jpg"/></li>
+	   </ul>
+       </div>
+                </center>
+                <div class='entry-info'>
+                   <h4>YUNIOR MARINO</h4>
+                   <h5>Paint Artist</h5>
+                   <h5 class='tight'>27 Bell StreetLondon</h5>
+                </div>
+                </div>
+          <script>
+jQuery(function($){
+	// Cycle plugin
+	$('#slides_11').cycle({
+	    fx:     'none',
+	    speed:   1000,
+	    timeout: 10
+	}).cycle("pause");
+	
+	// Pause & play on hover
+	$('#slideshow-block_11').hover(function(){
+		$(this).find('#slides_11').addClass('active').cycle('resume');
+	}, function(){
+		$(this).find('#slides_11').removeClass('active').cycle('pause');
+	});
+	
+});
+            </script>
+              </a>     <!----end first---->
+              
+              <a href="/exhibitions/anish-kapoor--13">     <!----second---->
+                 <div class='entry'>
+                   <center>
+       <div class="slideshow-block" id="slideshow-block_12">  <!----relative! --->
+       <ul class="slides" id="slides_12">
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2010/10/11.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2010/10/41.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2010/10/34.jpg"/></li>
+		<li><img src="http://ministryofnomads.com/wp-content/uploads/2010/10/23.jpg"/></li>
+	   </ul>
+       </div>
+                   </center>
+                   <div class='entry-info'>
+                      <h4>MABEL POBLET</h4>
+                      <h5>Paint Artist</h5>
+                      <h5 class='tight'>52 - 54 Bell Street London</h5>
+                   </div>
+                   </div>
+          <script>
+jQuery(function($){
+	// Cycle plugin
+	$('#slides_12').cycle({
+	    fx:     'none',
+	    speed:   1000,
+	    timeout: 10
+	}).cycle("pause");
+	
+	// Pause & play on hover
+	$('#slideshow-block_12').hover(function(){
+		$(this).find('#slides_12').addClass('active').cycle('resume');
+	}, function(){
+		$(this).find('#slides_12').removeClass('active').cycle('pause');
+	});
+	
+});
+            </script>
+              </a>     <!----end second---->
+              
+              
+         </div>     <!-----------END UPCOMING---------->
+         
+</div>        <!-----------END Border---------->
+</div>        <!-----------END TImeline---------->
+</div>
+
+</div>
+
+</body>
+</html>
